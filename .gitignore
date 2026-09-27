@@ -1,0 +1,10 @@
+# Archivos generados por Maven
+/target/
+/.m2-verification/
+
+# Configuración local de NetBeans
+/nbproject/private/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
