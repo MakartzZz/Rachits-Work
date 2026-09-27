@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1420.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.journeytounemployment.RegisterController">
+   <children>
+      <ImageView fx:id="imv_wallpaper" fitHeight="806.0" fitWidth="1420.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="tfl_newPlayer" alignment="CENTER" focusTraversable="false" layoutX="184.0" layoutY="178.0" prefHeight="47.0" prefWidth="383.0" promptText="APODO" style="-fx-background-color: #7b9429; -fx-border-color: #47641a; -fx-border-width: 4; -fx-background-radius: 17; -fx-border-radius: 12;">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="tfl_deletePlayer" alignment="CENTER" focusTraversable="false" layoutX="850.0" layoutY="178.0" prefHeight="47.0" prefWidth="383.0" promptText="APODO" style="-fx-border-color: #7b9429; -fx-background-color: #47641a; -fx-border-width: 4; -fx-background-radius: 17; -fx-border-radius: 12;">
+         <font>
+            <Font name="Tw Cen MT" size="23.0" />
+         </font></TextField>
+      <Button fx:id="btn_delete" focusTraversable="false" layoutX="1248.0" layoutY="178.0" mnemonicParsing="false" onAction="#DeletePlayer" prefHeight="47.0" prefWidth="70.0">
+         <effect>
+            <DropShadow height="76.21" radius="35.405" spread="0.26" width="67.41">
+               <color>
+                  <Color red="0.8289473652839661" green="0.226425439119339" blue="0.226425439119339" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="btn_Start" focusTraversable="false" layoutX="286.0" layoutY="609.0" mnemonicParsing="false" onAction="#StartGame" prefHeight="67.0" prefWidth="158.0">
+         <effect>
+            <DropShadow height="79.14" radius="37.605000000000004" spread="0.18" width="73.28">
+               <color>
+                  <Color red="0.34385964274406433" green="0.6315789222717285" blue="0.1520467847585678" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Label focusTraversable="false" layoutX="279.0" layoutY="146.0" prefHeight="30.0" prefWidth="193.0" text="Jugador Nuevo:" textFill="#f7ebb3">
+         <font>
+            <Font name="Yu Gothic Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="873.0" layoutY="146.0" prefHeight="32.0" prefWidth="337.0" text="Eliminar Jugador existente:" textFill="#f7ebb3">
+         <font>
+            <Font name="Yu Gothic Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="249.0" layoutY="321.0" prefHeight="32.0" prefWidth="254.0" text="Niveles Disponibles:" textFill="#47641a">
+         <font>
+            <Font name="Yu Gothic Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="274.0" layoutY="14.0" prefHeight="67.0" prefWidth="872.0" text="Registro de Entrenadores Pokemon" textFill="#7b9429">
+         <font>
+            <Font name="Century Gothic" size="51.0" />
+         </font>
+         <effect>
+            <DropShadow height="26.86" radius="15.8625" spread="0.38" width="38.59" />
+         </effect>
+      </Label>
+      <Label focusTraversable="false" layoutX="997.0" layoutY="372.0" prefHeight="47.0" prefWidth="114.0" text="Reglas:" textFill="#47641a">
+         <font>
+            <Font name="Yu Gothic Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="737.0" layoutY="438.0" prefHeight="286.0" prefWidth="634.0" text="1. No se puede caminar sobre las ranuras vacias.&#10;2. Colocar todas las Pokeball en su lugar.&#10;3. Evita hacer Enojar o Llorar a Austin, ta chiquito.&#10;4. Tener sentido de humor.&#10;5. Divertirce y no buscar errores.&#10;6.El guardado de tu progreso se realiza al salir al titulo;&#10;   No se guarda si cierras desde la barra de tareas." textFill="#f7ebb3">
+         <font>
+            <Font name="Yu Gothic Regular" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow height="28.09" radius="19.8325" spread="0.85" width="53.24" />
+         </effect>
+      </Label>
+      <Button fx:id="btn_Back" focusTraversable="false" layoutX="1302.0" layoutY="736.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="55.0" prefWidth="103.0" />
+      <RadioButton fx:id="rbt_levelOne" layoutX="316.0" layoutY="372.0" mnemonicParsing="false" onKeyPressed="#Sounds" onMouseClicked="#Sound" prefHeight="34.0" prefWidth="114.0" style="-fx-border-color: #7b9429; -fx-border-width: 2; -fx-border-radius: 5; -fx-background-color: #47641a; -fx-background-radius: 7;" text="Nivel #1" textFill="#f7ebb3">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Levels" />
+         </toggleGroup>
+      </RadioButton>
+      <Label fx:id="lbl_sms" alignment="CENTER" layoutX="190.0" layoutY="225.0" prefHeight="30.0" prefWidth="371.0" textFill="#bc3636">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_msg" alignment="CENTER" layoutX="856.0" layoutY="240.0" prefHeight="30.0" prefWidth="371.0" textFill="#bc3636">
+         <font>
+            <Font name="Sylfaen" size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbt_levelTwo" layoutX="316.0" layoutY="413.0" mnemonicParsing="false" onKeyPressed="#Sounds" onMouseClicked="#Sound" prefHeight="34.0" prefWidth="114.0" style="-fx-border-color: #7b9429; -fx-border-width: 2; -fx-border-radius: 5; -fx-background-color: #47641a; -fx-background-radius: 7;" text="Nivel #2" textFill="#f7ebb3" toggleGroup="$Levels">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbt_levelThree" layoutX="316.0" layoutY="453.0" mnemonicParsing="false" onKeyPressed="#Sounds" onMouseClicked="#Sound" prefHeight="34.0" prefWidth="114.0" style="-fx-border-color: #7b9429; -fx-border-width: 2; -fx-border-radius: 5; -fx-background-color: #47641a; -fx-background-radius: 7;" text="Nivel #3" textFill="#f7ebb3" toggleGroup="$Levels">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbt_levelFour" layoutX="316.0" layoutY="493.0" mnemonicParsing="false" onKeyPressed="#Sounds" onMouseClicked="#Sound" prefHeight="34.0" prefWidth="114.0" style="-fx-border-color: #7b9429; -fx-border-width: 2; -fx-border-radius: 5; -fx-background-color: #47641a; -fx-background-radius: 7;" text="Nivel #4" textFill="#f7ebb3" toggleGroup="$Levels">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbt_levelFive" layoutX="316.0" layoutY="533.0" mnemonicParsing="false" onKeyPressed="#Sounds" onMouseClicked="#Sound" prefHeight="34.0" prefWidth="114.0" style="-fx-border-color: #7b9429; -fx-border-width: 2; -fx-border-radius: 5; -fx-background-color: #47641a; -fx-background-radius: 7;" text="Nivel #5" textFill="#f7ebb3" toggleGroup="$Levels">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

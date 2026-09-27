@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.journeytounemployment.TitleController">
+   <children>
+      <ImageView fx:id="ivw_frontpage" fitHeight="800.0" fitWidth="1500.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btn_stardGame" layoutX="1108.0" layoutY="354.0" mnemonicParsing="false" onAction="#StarGame" prefHeight="53.0" prefWidth="178.0">
+         <effect>
+            <DropShadow height="68.15" radius="34.1225" spread="0.17" width="70.34">
+               <color>
+                  <Color red="0.26864033937454224" green="0.6141630411148071" blue="0.8289473652839661" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="btn_close" layoutX="1108.0" layoutY="483.0" mnemonicParsing="false" onAction="#CloseGame" prefHeight="53.0" prefWidth="178.0">
+         <effect>
+            <DropShadow height="76.21" radius="37.605" spread="0.14" width="76.21">
+               <color>
+                  <Color red="0.8815789222717285" green="0.5104451179504395" blue="0.16325536370277405" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="btn_more" contentDisplay="RIGHT" layoutX="14.0" layoutY="691.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#MoreInformation" prefHeight="94.0" prefWidth="150.0">
+         <effect>
+            <DropShadow height="76.21" radius="34.6725" spread="0.25" width="64.48">
+               <color>
+                  <Color red="0.07919103652238846" green="0.34210526943206787" blue="0.33334144949913025" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="btn_continue" disable="true" layoutX="1108.0" layoutY="232.0" mnemonicParsing="false" onAction="#ContinuePastParty" prefHeight="53.0" prefWidth="178.0">
+         <effect>
+            <DropShadow height="58.62" radius="31.740000000000002" spread="0.17" width="70.34">
+               <color>
+                  <Color red="0.18421052396297455" green="0.4736842215061188" blue="0.2469298243522644" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <TextField fx:id="tfl_TrainerName" alignment="CENTER" layoutX="1115.0" layoutY="160.0" onMouseClicked="#CleanSMS" prefHeight="38.0" prefWidth="178.0" promptText="Entrenador" style="-fx-background-color: #6c9750;">
+         <effect>
+            <DropShadow height="43.97" radius="20.75" spread="0.15" width="41.03">
+               <color>
+                  <Color red="0.044199999421834946" green="0.3400000035762787" blue="0.10054285824298859" />
+               </color></DropShadow>
+         </effect>
+         <font>
+            <Font name="Webdings" size="18.0" />
+         </font></TextField>
+      <Button fx:id="btn_search" layoutX="1304.0" layoutY="156.0" mnemonicParsing="false" onAction="#SearchTrainer" prefHeight="45.0" prefWidth="45.0">
+         <effect>
+            <DropShadow height="41.52" radius="27.465000000000003" spread="0.18" width="70.34">
+               <color>
+                  <Color red="0.7368420958518982" green="0.1603313833475113" blue="0.1603313833475113" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Label fx:id="lbl_msg" alignment="CENTER" layoutX="1115.0" layoutY="198.0" prefHeight="30.0" prefWidth="178.0" textFill="#6c9750">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="59.0" fitWidth="594.0" layoutX="23.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/Rachits'Work.png" />
+         </image>
+         <effect>
+            <DropShadow height="58.62" radius="29.542499999999997" spread="0.28" width="61.55">
+               <color>
+                  <Color red="0.027412280440330505" green="0.32894736528396606" blue="0.06259137392044067" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

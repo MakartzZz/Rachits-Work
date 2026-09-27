@@ -1,0 +1,32 @@
+-- Create table
+create table TBL_PROGRESS
+(
+  pg_nickname VARCHAR2(25) not null,
+  pg_level    NUMBER(2)
+)
+tablespace UNA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table TBL_PROGRESS
+  add constraint PK_NICKNAME primary key (PG_NICKNAME)
+  using index 
+  tablespace UNA
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
